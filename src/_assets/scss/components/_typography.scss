@@ -1,0 +1,75 @@
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;	
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 500;
+	color: $gray;
+	line-height: 1.2;	
+	&:after {
+		content: "---";
+		display: block;
+		width: 100%;
+		margin: 0 0 15px 0;
+		letter-spacing: -3px;
+		color: $red;
+		font-size: 120%;		
+	}
+	@include md {
+		font-size: 32px;
+	}
+}
+
+h3 {
+	font-size: 20px;
+	margin: 0 0 20px;
+	line-height: 1.2;	
+	@include md {
+		font-size: 26px;
+	}
+	&[class^="icon"] {
+		background-repeat: no-repeat;	
+		background-size: 48px;	
+		padding: 13px 0 13px 60px;	
+	}
+}
+
+h4 {
+	font-size: 18px;
+	margin: 0 0 15px;
+	span {
+		font-size: 16px;	
+	}
+	.row-content & {
+		font-size: 20px;
+		line-height: 1.2;	
+	}
+	@include md {
+		font-size: 16px;
+		.row-content & {
+			font-size: 20px;
+		}
+	}
+}
+
+p {
+	font-size: 14px;
+	margin: 0 0 20px;
+	line-height: 1.3;
+	.row-content &,
+	.box-content & {
+		font-size: 16px;
+		line-height: 1.4;	
+		font-weight: 300;	
+	}
+}
+
+.row-content p.small {
+	font-size: 12px;	
+}
+
+a {
+	color: $red;
+	text-decoration: underline;
+}

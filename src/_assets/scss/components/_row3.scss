@@ -1,0 +1,57 @@
+.row3 {
+	text-align: center;
+	margin: 30px 0 60px;
+
+	@include md {
+		display: flex;
+		margin: 90px 0 70px;
+	}
+	.col {
+		margin: 0 0 30px;
+		@include md {
+			margin: 0;
+			width: 33.333%;
+			padding: 0 15px;
+		}
+	}
+	h3 {
+		font-size: 20px;
+		font-weight: 500;
+		margin: 15px 0 20px;
+	}
+	.icon {
+		margin: 0 auto;
+	}
+	p {
+		line-height: 1.5;	
+	}
+}
+
+.row4 {
+	text-align: center;
+	margin: 30px 0 0px;
+	width: 100%;	
+	@include md {
+		display: flex;
+		margin: 40px 0 30px;
+	}
+	.col {
+		margin: 0 0 40px;
+		@include md {
+			margin: 0;
+			width: 25%;
+			padding: 0 15px;
+		}
+	}
+	h3 {
+		font-size: 20px;
+		font-weight: 500;
+		margin: 15px 0 20px;
+	}
+	.icon {
+		margin: 0 auto;
+	}
+	p {
+		line-height: 1.5;	
+	}
+}

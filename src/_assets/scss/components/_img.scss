@@ -1,0 +1,61 @@
+.img-rounded {
+	border-radius: 10px;
+	max-width: 50%;
+	display: block;
+	margin: 0 auto;
+	@include md {
+		margin: 0;
+		max-width: 100%;
+	}
+}
+
+.img-overlay {
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;	
+	text-align: center;	
+	margin-bottom: 20px;
+	text-decoration: none;	
+	display: flex;	
+	min-height: 250px;	
+	&_title {
+		display: flex;
+		position: relative;	
+		z-index: 1;
+		padding: 0 40px;
+		transition: all .3s;
+		text-shadow: 0 0 60px rgba($b, 1);
+		align-items: stretch;
+		width: 100%;
+		@include md {
+			padding: 0 100px;
+		}
+	}
+	h4 {
+		color: $w;
+		font-weight: bold;	
+		font-size: 24px;
+		margin: auto 0;
+		width: 100%;	
+	}
+	img {
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		position: absolute;
+		transition: all .3s;
+		transform-origin: 50%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&:hover {
+		.img-overlay_title {
+			background: transparent;
+		}
+		img {
+			transform: translateY(-50%) scale(103%);
+		}
+	}
+}

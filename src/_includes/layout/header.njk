@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+	<title>{{title}}</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700" rel="stylesheet" data-embed="false">
+	{% if myProject.environment == "production" %}
+	<style>{{ css | cssmin | safe }}</style>
+	{% else %}
+	<style>{{ css | safe }}</style>
+	{% endif %}
+	
+	{# <link rel="stylesheet" href="/_assets/css/styles.css"> #}
+	<link rel="stylesheet" href="https://stacrmtswemktcdnlrs.z6.web.core.windows.net/_assets/css/styles.css">
+	
+	<script src="https://mktdplp102cdn.azureedge.net/public/latest/js/ws-tracking.js?v=1.84.2007"></script>
+</head>
+<body>
+	<main class="wrapper">
+		<div class="logo">
+			<div class="container">
+				<div class="logo-svg"></div>
+			</div>
+		</div>

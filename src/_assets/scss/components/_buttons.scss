@@ -1,0 +1,103 @@
+.btn {
+	display: inline-block;
+	font-weight: 500;
+	color: $w;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+	background-color: $red;
+	border: 1px solid transparent;
+	padding: 10px 20px;
+	font-family: Ubuntu, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	border-radius: 4px;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	border-radius: 4px;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	margin-right: 10px;	
+	&:hover {
+		background-color: #bf1e2c;
+	}
+	&--white {
+		background-color: $w;
+		border-color: $red;
+		color: $red;
+		&:hover {
+			background: $w;
+			border: 1px solid darken($red, 10%);
+			color: darken($red, 10%) !important;
+		}
+	}
+	&--gray {
+		background-color: $w;
+		border-color: $gray;
+		color: $gray;
+		&:hover {
+			background: $w;
+			border: 1px solid darken($gray, 10%);
+			color: darken($gray, 10%) !important;
+		}
+	}
+	&--white-transparent {
+		background-color: transparent;
+		border-color: $w;
+		color: $w;
+		&:hover {
+			background: rgba($w,.2);
+			border: 1px solid $w;
+			color: $w;
+		}
+	}
+	&--shadow {
+		background-color: $w;
+		border-color: transparent;
+		color: $gray;
+		box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+		padding: 15px 15px;
+		&:hover {
+			background-color: $w;
+			border-color: transparent;
+			color: darken($gray, 10%);
+			box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+		}
+	}
+	&--icon {
+		background-size: 28px;
+		background-position: 15px center;
+		padding-left: 50px;
+	}
+	&--arrow {
+		position: relative;	
+		padding-right: 50px;	
+		&:after {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 15px;
+			top: 20px;
+			right: 25px;
+			background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg viewBox='0 0 320 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z' fill='%23EF2637'/%3E%3C/svg%3E");
+			background-size: 10px;
+		}
+	}
+}
+
+.btn-group {
+	margin: 15px 0 0;
+	.btn {
+		margin-top: 15px;
+		width: 100%;	
+		@include md {
+			width: 	auto;
+			margin-bottom: 12px;
+			margin-top: 0;
+			min-width: 195px;	
+		}
+	}
+}
+
+
+

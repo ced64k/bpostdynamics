@@ -1,0 +1,32 @@
+.partners {
+	margin: 0 0 50px;
+	@include md {
+		margin: 70px 0 70px;
+	}
+	&_inner {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		grid-gap: 1rem;
+		@include lg {
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		}
+	}
+	.item {
+		padding: 10px 0;
+		div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+		min-height: 20px;
+		object-fit: contain;
+		filter: grayscale(100%);
+		opacity: .6;
+	}
+}

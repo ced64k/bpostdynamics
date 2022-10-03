@@ -1,0 +1,16 @@
+.center {
+	text-align: center;	
+}
+
+.hide-desktop {
+	@include md {
+		display: none;	
+	}
+}
+
+.small {
+	font-size: 11px;
+	a {
+		color: $gray;
+	}
+}

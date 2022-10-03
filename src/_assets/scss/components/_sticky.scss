@@ -1,0 +1,13 @@
+.sticky-bottom {
+	background: $w;
+	position: sticky;
+	bottom: 0;
+	padding: 15px 0;
+	text-align: center;	
+	box-shadow: 0 0 12px rgba(0,0,0,.15);
+	z-index: 1;	
+}
+
+body.sticky footer {
+	padding-bottom: 100px;	
+}

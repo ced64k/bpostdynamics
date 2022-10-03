@@ -1,0 +1,79 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+:root body {
+    font-size: 1.4rem;
+}
+html, body {
+  height: 100%;
+}
+body {
+    color: #5A5A5F;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1;
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.wrapper {
+	padding-bottom: 20px;	
+}
+
+.wrapper-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  pading: 0 20px 20px;
+}
+
+.section {
+	margin-bottom: 60px;
+	&:last-child {
+		margin-bottom: 0;	
+	}
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.video-player {
+	margin: 0 auto;
+	display: block;	
+	border-radius: 10px;	
+}
+
+.hero {
+	text-align: center;	
+	max-width: 740px;	
+	margin: 20px auto 70px;
+}
+
+.single-limit {
+	text-align: center;	
+	max-width: 770px;	
+	margin: 20px auto 70px;
+}

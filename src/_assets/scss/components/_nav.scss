@@ -1,0 +1,29 @@
+.nav {
+	display: none;	
+	@include md {
+		display: block;	
+	}
+	.container {
+		position: relative;	
+	}
+	ul {
+		position: absolute;	
+		top: -47px;
+		right: 15px;
+		text-align: right;
+		@include md {
+			right: 0;
+		}
+	}
+	li {
+		list-style-type: none;	
+		font-size: 14px;
+		display: inline-block;
+		margin-left: 20px;
+	}
+	a {
+		color: $gray;
+		list-style-type: none;	
+		text-decoration: none;
+	}
+}

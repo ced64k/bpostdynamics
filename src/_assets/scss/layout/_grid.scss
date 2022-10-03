@@ -1,0 +1,88 @@
+.row,
+.row-content {
+	@include md {
+		display: flex;
+		flex: 1;
+		margin: 0 -15px;
+	}
+}
+
+.col,
+[class^="col-"] {
+	@include md {
+		// flex-basis: 100%;
+		padding: 0 15px;
+	}
+}
+
+.col-1 {
+	@include md {
+		width: 8.333333%;
+	}	
+}
+
+.col-2 {
+	@include md {
+		width: 16.666667%;
+	}	
+}
+
+.col-3 {
+	@include md {
+		width: 25%;
+	}	
+}
+
+.col-4 {
+	@include md {
+		width: 33.333333%;
+	}
+}
+
+.col-5 {
+	@include md {
+		width: 41.666667%;
+	}	
+}
+
+.col-6 {
+	@include md {
+		width: 50%;
+	}	
+}
+
+.col-7 {
+	@include md {
+		width: 58.333333%;
+	}	
+}
+
+.col-8 {
+	@include md {
+		width: 66.666667%;
+	}
+}
+
+.col-9 {
+	@include md {
+		width: 75%;
+	}	
+}
+
+.col-10 {
+	@include md {
+		width: 83.333333%;
+	}	
+}
+
+.col-11 {
+	@include md {
+		width: 91.666667%;
+	}	
+}
+
+.col-12 {
+	@include md {
+		width: 100%;
+	}	
+}
